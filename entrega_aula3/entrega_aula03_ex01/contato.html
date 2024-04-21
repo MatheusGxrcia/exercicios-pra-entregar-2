@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato</title>
+</head>
+
+<body>
+    <main>
+        <h2>Entre em contato</h2>
+        <form action="processar_formulario.php" method="post">
+            <fieldset>
+                <label for="Nome">Nome Completo:</label>
+                <input type="Nome" id="Nome" name="Nome" required>
+                <br>
+                <label for="E-mail">Endereco de E-mail:</label>
+                <input type="E-mail" id="E-mail" name="E-mail" required>
+                <br>
+
+                <label for="assunto">Selecione o assunto:</label>
+                <select id="assunto" name="assunto">
+                    <option value="" selected disabled>Escolha o assunto</option>
+                    <option value="Pergunta">Pergunta</option>
+                    <option value="Feedback">Feedback</option>
+                    <option value="Informação">Informação</option>
+                </select>
+                <br>
+                <label for="mensagem">Mensagem:</label>
+                <textarea name="mensagem" id="mensagem" cols="50" rows="4" placeholder="Digite sua mensagem" required></textarea>
+                <br>
+                <input type="Radio" id="contato_e-mail" name="preferência_contato" value="E-mail">
+                <label for="contato_e-mail">Desejo receber a Newsletter</label>
+
+            </fieldset>
+</body>
+
+</html>
