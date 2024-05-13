@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fdebd0;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #f0932b;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    z-index: 100; /* Z-index maior para o cabeçalho */
+
+}
+h1 {
+    margin: 0;
+}
+main {
+    height: 100%;
+margin-top: 50px;
+padding-bottom: 50px; /* Altura do footer */
+background-color: white;
+align-items: center;
+justify-content: center;
+margin-left: 10%;
+margin-right: 10%;
+border: 2px solid #f0932b ;
+display: flex;
+flex-wrap: wrap;
+
+}
+main div{
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    flex:1 1 1;
+}
+.meme {
+    background-color: #f0942bb4;
+    margin: 10px 5px 10px 5px;
+    border: 2px solid #f0942bb4;
+    border-radius: 5px;
+    transform: scale(1.0);
+    transition: transform 0.3s ease;
+}
+.meme img {
+    
+    width: 100%;
+    margin: 10px;
+}
+.meme:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    background-color: #f0942b;
+    border: 2px solid #f0942b;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f0932b;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    height: 30px;
+}
